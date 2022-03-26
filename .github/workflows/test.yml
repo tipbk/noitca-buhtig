@@ -22,10 +22,15 @@ jobs:
         run: ls
       - name: run python
         run: python sample.py
+      - name: timestamp on done
+        run: date + "%T"
         
   onemorejob:
     name: try something
+    needs: printsomething
     runs-on: ubuntu-latest
     steps:
       - name: simple echo
         run: echo "wanna eat choongman"
+      - name: timestamp on done
+        run: date + "%T"
