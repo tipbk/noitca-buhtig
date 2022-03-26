@@ -7,5 +7,9 @@ jobs:
     name: echo something
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
       - name: echo ja
         run: echo "Hello World From Workflows"
+      - name: run python
+        run: py sample.py
