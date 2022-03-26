@@ -6,4 +6,6 @@ jobs:
   printsomething:
     name: echo something
     runs-on: ubuntu-latest
-    run: echo "Hello World From Workflows"
+    steps:
+      - name: echo ja
+        run: echo "Hello World From Workflows"
