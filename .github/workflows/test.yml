@@ -1,0 +1,9 @@
+name: test
+
+on: push
+
+jobs:
+  printsomething:
+    name: echo something
+    runs-on: ubuntu-latest
+    run: echo "Hello World From Workflows"
