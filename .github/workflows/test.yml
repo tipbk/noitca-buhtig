@@ -7,6 +7,8 @@ jobs:
     name: echo something
     runs-on: ubuntu-latest
     steps:
+      - name: list file system before executing anythin
+        run: ls
       - name: Checkout code
         uses: actions/checkout@v2
       - name: echo ja
