@@ -23,7 +23,7 @@ jobs:
       - name: run python
         run: python sample.py
       - name: timestamp on done
-        run: date + "%T"
+        run: echo $(date +"%T")
         
   onemorejob:
     name: try something
@@ -33,4 +33,4 @@ jobs:
       - name: simple echo
         run: echo "wanna eat choongman"
       - name: timestamp on done
-        run: date + "%T"
+        run: echo $(date +"%T")
