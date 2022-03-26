@@ -22,3 +22,10 @@ jobs:
         run: ls
       - name: run python
         run: python sample.py
+        
+  onemorejob:
+    name: try something
+    runs-on: ubuntu-latest
+    steps:
+      - name: simple echo
+        run: echo "wanna eat choongman"
