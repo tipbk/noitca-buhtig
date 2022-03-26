@@ -16,5 +16,7 @@ jobs:
         with:
           python-version: '3.7' # Version range or exact version of a Python version to use, using SemVer's version range syntax
           architecture: 'x64'
+      - name: check file system
+        run: ls
       - name: run python
         run: python sample.py
